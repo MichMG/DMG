@@ -1,0 +1,39 @@
+<br>
+<HR>
+<form>
+    <h3><strong> ENTRADA DE DATOS </strong><BR></h3>
+    <div>
+        <label for="form_number">Numero: </label>
+        <input name="form_number" [(ngModel)]="form_number" name="form_number" type="number" min="1" max="10" ><br> 
+        <BR>
+    </div>
+    <div>
+        <label for="form_fecha">Fecha: </label>
+        <input name="form_fecha" [(ngModel)]="form_fecha" name="form_fecha" type="date"> <br>
+        <BR>
+    </div>
+    <div>
+        <label for="form_descripcion">Descripcion: </label>
+        <textarea name="form_descripcion" [(ngModel)]="form_descripcion" name="form_descripcion"> </textarea><br>
+        <BR>
+    </div>
+    <div>
+        <label for="to">Para:</label>
+        <input id="to" type="email" [(ngModel)]="email" name="email" placeholder="tu@correo.com">
+        <BR><BR>
+    </div>
+     <div> 
+        <button type="button" class="boton" (click)="show()">Adicionar</button>
+        <button type="button" class="boton" (click)="clean()">Limpiar</button>
+     </div>
+    <HR>
+<HR>
+</form>
+<div *ngIf="mostrar">
+    <h3><strong>  {{ titulo }}</strong><BR></h3>
+    <p>numer: {{ form_number }}</p>
+    <p>fecha: {{ form_fecha }}</p>
+    <p>descripcion: {{ form_descripcion }}</p>
+    <p>email: {{ email }}</p>
+</div>
+<BR>

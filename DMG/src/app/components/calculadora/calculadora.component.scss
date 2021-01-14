@@ -1,0 +1,64 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2em; 
+    margin-left: 20px;
+}
+
+button  {
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    color: rgb(0, 67, 252);
+    font-weight: bold;
+    width: 70px;
+    height: 60px;
+    margin: 5px;
+    }
+.boton0 {
+    margin-left: 110px;
+    }
+
+.boton1 {
+    margin-left: 20px;
+    color: rgb(252, 0, 0);
+    }
+
+.boton2 {
+    color: rgb(21, 122, 1);
+    margin-left: 20px;
+    }
+
+.boton3 {
+    color: rgb(255, 0, 200);
+    width: 120px;
+    height: 60px;
+    }
+
+input{
+    width: 300px;
+    height: 25px;
+    font-size: 1em;
+}
+    .recuadro{
+    border: 10px;
+    border-style:dashed;
+    border-color: rgb(0, 0, 0);
+    position: relative;
+    width: 520px;
+    height: 550px;
+    background-color: rgb(167, 167, 167);
+    
+  }
+    .encabezado{
+        border: 10px;
+        border-style:dashed;
+        border-color: rgb(0, 0, 0);
+        width: 520px;
+        height: 80px;
+        background-color: rgb(167, 167, 167);
+    }
+
