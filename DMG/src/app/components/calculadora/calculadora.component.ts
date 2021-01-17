@@ -6,14 +6,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './calculadora.component.html',
   styleUrls: ['./calculadora.component.scss']
 })
+
 export class CalculadoraComponent implements OnInit {
   resultado: string ="" ;
   mostrar:boolean= false ;
   mimemoria:string;
-
+  
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
   calcular(miNumero: string ){
@@ -22,12 +24,12 @@ export class CalculadoraComponent implements OnInit {
     }
      
     igual(){
-      if(this.resultado!="") {
-         this.resultado=eval(this.resultado);
-         this.mostrar=true ;
-      }
+        this.mostrar=true ;
+        this.resultado=eval(this.resultado);
     }
+
     CE(){
+
       this.resultado="";
       this.mostrar=false ;
     }
@@ -45,8 +47,10 @@ export class CalculadoraComponent implements OnInit {
       this.resultado=this.resultado+this.mimemoria
       this.mostrar=false ;
     }
+    
     memoriaborrar(){
       this.mimemoria="";
       this.mostrar=false ;
     }      
-}
+}    
+

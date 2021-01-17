@@ -1,8 +1,8 @@
-    <div type="titulo" class= "encabezado" >
-         <H1>CALCULADORA</H1>
-    </div>
-    
 <form>
+    <div type="titulo" class= "encabezado" >
+        <H1>CALCULADORA</H1>
+    </div>
+
     <div type ="cuadrado" class= "recuadro" >
         <div>
             <h2 > 
@@ -10,54 +10,51 @@
             <input id="resultado" type="resultado" [(ngModel)]="resultado" name="resultado" placeholder="">
             <BR>
             </h2> 
-        </div> 
-
-        <div>
-            <div>
-                <button type="button" class="boton1" (click)="CE()"> CE </button>
-                <button type="button" class="boton1" (click)="backespace()"> C </button>
-                <button type="button" class="boton1" (click)="memoria()"> M </button>
-                <button type="button" class="boton1" (click)="memoriaresultado()"> MR </button>
-                <button type="button" class="boton1" (click)="memoriaborrar()"> CM </button>
-            </div>
-            <div>
-                <br><br>
-                <button type="button" class="boton0" (click)="calcular('1')"> 1 </button>
-                <button type="button" class="boton" (click)="calcular('2')"> 2 </button>
-                <button type="button" class="boton" (click)="calcular('3')"> 3 </button>
-                <br>
-            </div>
-            <div>
-                <button type="button" class="boton0" (click)="calcular('4')"> 4 </button>
-                <button type="button" class="boton" (click)="calcular('5')"> 5 </button>
-                <button type="button" class="boton" (click)="calcular('6')"> 6 </button>
-                <br>
-            </div>
-            <div>
-                <button type="button" class="boton0" (click)="calcular('7')"> 7 </button>
-                <button type="button" class="boton" (click)="calcular('8')"> 8 </button>
-                <button type="button" class="boton" (click)="calcular('9')"> 9 </button>
-                <br>
-            </div>
-            <div>
-                <button type="button" class="boton0" (click)="calcular('0')"> 0 </button>
-                <button type="button" class="boton" (click)="calcular('.')"> . </button>
-                <br>
-            </div> 
-            <div>
-                <button type="button" class="boton2" (click)="calcular('+')"> + </button>
-                <button type="button" class="boton2" (click)="calcular('-')"> - </button>
-                <button type="button" class="boton2" (click)="calcular('*')"> * </button>
-                <button type="button" class="boton2" (click)="calcular('/')"> / </button>
-                <button type="button" class="boton3" (click)="igual()"> = </button>
-                <br>
-            </div>
-
         </div>
 
+        <div>
+            <button type="button" class="boton1" (click)="CE()"> CE </button>
+            <button type="button" class="boton1" (click)="backespace()"> C </button>
+            <button type="button" class="boton1" (click)="memoria()"> M </button>
+            <button type="button" class="boton1" (click)="memoriaresultado()"> MR </button>
+            <button type="button" class="boton1" (click)="memoriaborrar()"> CM </button>
+        </div>
+        <div>
+            <br><br>
+            <button type="button" class="boton0" (click)="calcular('1')"> 1 </button>
+            <button type="button" class="boton" (click)="calcular('2')"> 2 </button>
+            <button type="button" class="boton" (click)="calcular('3')"> 3 </button>
+            <button type="button" class="boton2" (click)="calcular('/')"> / </button>
+            <br>
+        </div>
+        <div>
+            <button type="button" class="boton0" (click)="calcular('4')"> 4 </button>
+            <button type="button" class="boton" (click)="calcular('5')"> 5 </button>
+            <button type="button" class="boton" (click)="calcular('6')"> 6 </button>
+            <button type="button" class="boton2" (click)="calcular('*')"> * </button>
+            <br>
+        </div>
+        <div>
+            <button type="button" class="boton0" (click)="calcular('7')"> 7 </button>
+            <button type="button" class="boton" (click)="calcular('8')"> 8 </button>
+            <button type="button" class="boton" (click)="calcular('9')"> 9 </button>
+            <button type="button" class="boton2" (click)="calcular('-')"> - </button>
+            <br>
+        </div>
+        <div>
+            <button type="button" class="boton0" (click)="calcular('.')"> . </button>
+            <button type="button" class="boton" (click)="calcular('0')"> 0 </button>
+            <button type="button" class="boton" (click)="igual()"> = </button>
+            <button type="button" class="boton2" (click)="calcular('+')"> + </button>
+            <br>
+        </div> 
+
+
     </div>
+
+
 </form>
-<!-- 
+<!--
 <div *ngIf="mostrar">
 
    <h3><strong> Resultado: {{ resultado }}</strong><BR></h3>
